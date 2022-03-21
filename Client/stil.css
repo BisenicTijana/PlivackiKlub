@@ -1,0 +1,1015 @@
+
+.formaPostolje
+{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+/*---------------------------------------------------------------------------*/
+   .izborKluba
+   {
+        border-style: solid;
+        border-radius: 50px;
+        border-color:  #3a5479;
+        border-width: 3.5px;
+        font-family: 'Goudy Old Style';
+        color: #3a5479;
+        text-align:center;
+        font-size: 50px;
+        text-transform:uppercase;
+        font-weight: bold;
+        align-items: center;
+
+        width:50%;
+        height: 100%;
+        align-self:center;
+        margin: 250px 50px;
+        font-size-adjust: 70%;
+        box-shadow: 7px 7px 7px;
+
+        background-color: #9aaec9;
+
+        
+   }
+
+   body
+   {
+        background:  #d7d8e4;
+        height: 100%; /* ovo ne radi nista inace */
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        /* display: flex;
+        justify-content: center;
+        height: fit-content; */
+   }
+   .pozadina 
+   {
+       display:flex;
+       min-height: 100%;
+       min-width: 100%;
+       flex-direction: row;
+       height: fit-content;
+   }
+
+   .divGlavniKontejner
+   {
+       display: flex;
+       flex-direction: column;
+       min-width: 100%;
+       min-height: 100%;
+       align-content: space-around;
+       flex:1 1 auto;
+   }
+
+   .divGlavniNaslov
+   {
+       display:flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       align-items: center;
+       margin: 0.5%; 
+       margin-bottom: 0px;
+   }
+   h1
+   {
+       background-color:  #9aaec9;
+       width: 80%;
+
+       font-family: 'Goudy Old Style';
+       color: #3a5479;
+       text-align:center;
+        font-size: 60px;
+        text-transform:uppercase;
+        font-weight: bold;
+
+        box-shadow: 7px 7px 7px;
+        border-style: solid;
+        border-radius: 15px;
+        border-color:  #3a5479;
+
+        margin-bottom: 0px;
+        margin-top: 0px;
+
+   }
+
+    .divDugmiciZaIzbor
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .dugmeZaIzbor
+    {
+        display: flex;
+        flex-grow: 0.265;
+        flex-shrink: 1.5;
+        flex-basis: 100px;
+        height: 1.2cm;
+        box-shadow: 7px 7px 7px;
+        margin-top: 0px;
+        /*margin-bottom: 25px;*/
+        margin-bottom: 15px; 
+        font-size: 22px;
+
+        max-height: none;
+
+    }
+    button
+    {
+        border-style: solid;
+        border-radius: 10px;
+        border-color:  #3a5479;
+        font-family: 'Goudy Old Style';
+        color: #3a5479;
+        text-transform:uppercase;
+        font-weight: bold;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex: 1 1 auto;
+
+        min-width: 90px;
+
+        max-height: 25px;
+
+    }
+    .GlavnaForma
+    {
+       background-color:#9aaec9;
+        opacity: 1;
+
+        /* najbolje bi bilo kad ovo ne bi imalo flex,
+        ali trenutno INFO KLUB zahteva to tako da uradi
+        kao sto si za UREDI PLIVACA, stavi prvo div koji je flex
+        pa tek onda forme */
+       /* display: flex;
+        flex: 1 1 auto; /*mozda i ne auto*/
+
+        align-self: center;
+        width: 75%;
+        
+        height: 100%;
+        
+        margin: 10px;
+      
+
+        border-style: solid;
+        border-radius: 15px;
+        border-color:  #3a5479;
+        box-shadow: 7px 7px 7px  #3a5479;
+
+    }
+    /*--------------------------------DO OVDE OK--------------------------------------*/
+    .donjaForma
+    {
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        flex-direction: row;
+       /* height: 100%;*/
+
+    }
+    .ceoPlivac
+    {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        width: 40%;
+       /* height:100%* //ZAJEBAVALO, SVE ISLO NAPOLJ TAKM */
+        min-width: 250px; /* dodato zbog wrap-a*/
+
+       
+        align-items: center;
+
+        margin-bottom: 45px;
+       
+
+    }
+
+    h3, h4
+    {
+            font-family: 'Goudy Old Style';
+            color: #2b415e;
+            text-align:center;
+            font-size: 25px;
+            text-transform:uppercase;
+            font-weight:  bolder;
+            display: flex;
+           
+            flex-grow: 0.5;
+            flex-shrink: 1.75;
+    }
+
+    .formaPretragaPlivac
+   {
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        align-items: center;
+       
+       /* width: 77%;*/
+       width: 70%;
+       margin:10px;
+     
+
+   }
+
+   .formaPretragaPlivac .redPretraga
+   {
+        display: flex;
+        justify-content: center; 
+        flex-wrap: wrap;
+
+        width:90%;
+
+   }
+   .izaberiPlivaca
+   {
+        display: flex;
+        /*flex:1 1 auto;*/
+        justify-content:space-around ;
+        flex-wrap: wrap;
+        flex-direction: row;
+        
+        width:90%;
+   }
+   .selectPretragaPlivac
+   {
+        flex: 1 1.2 auto ;
+        border-style: solid;
+        border-radius: 5px;
+        border-color:  #3a5479;
+        width:60%;
+        min-width: 146px;
+   }
+   .pretraga
+   {
+        flex: 1 1 auto ;
+        border-style: solid;
+        border-radius: 5px;
+        border-color:  #3a5479;
+        width:60%;
+   }
+
+   .formaPrikazPlivac
+   {
+     
+        display: flex;
+        flex-flow:column wrap;
+    
+       flex-grow: 1;
+       align-items: center;
+       width: 70%;
+
+
+       border-style: solid;
+       border-radius: 7px;
+       border-width: 3.5px;
+       border-color:  #3a5479;
+
+       background-color: #d7d8e4;
+       /*margin-bottom: 16%;/* 80px */
+      
+   }
+
+   .formaPrikazPlivac .red
+   {
+       
+        display: flex;
+        flex-flow:row wrap;
+        width:94%;
+        margin: 1.5px;
+        flex-grow: 1;
+
+       
+   }
+   label
+   {
+        font-family: 'Goudy Old Style';
+        color: #2b415e;
+        text-align:center;
+        font-size: 17px;
+        font-weight: bold;
+
+   }
+
+   .red 
+   {
+       justify-content: center;
+       align-items: center;
+   }
+
+   .formaPrikazPlivac .red  label 
+   {
+    display: flex;
+        min-width: 130px;
+        width:30%;
+        justify-content: center;
+        align-items: center;
+
+       margin:5px;
+   }
+
+   .formaPrikazBox, .selectNivoSpreme , .selectEl /*,, .formaPrikazBoxGrad, .formaPrikazBxDrzava */
+   {
+    
+    display: flex;
+    flex-flow:row wrap;
+
+    
+    margin: 5px;
+    flex-grow: 2;
+
+   }
+   .selectNivoSpreme , .selectEl
+   {
+       min-width: 120px;
+   }
+   /*.nivoSpremePol
+   {
+    height: 1cm;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width:100%;
+    margin: 10px;
+    flex-grow: 1;
+   }*/
+   
+   .divZaRbt
+   {
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   
+    margin: 5px;
+    width:94%;
+    flex-grow: 1;
+
+   }
+
+
+  /* .divPlivacCRUD
+   {
+      
+    display: flex;
+    flex-flow: row wrap;
+   
+    width:94%;
+    margin: 5px;
+    flex-grow: 1;
+    justify-content: center;
+       align-items: center;
+   }*/
+
+   /*----------------------TAKMICENJE----------------*/
+
+
+   .celoTakm
+   {
+        display: flex;
+        flex:1 1 auto;
+        flex-direction: column;
+        width: 40%;
+        justify-content: center;
+        align-items: center;
+
+        min-width: 356px;
+       /*min-width: 250px;*/
+        margin-bottom: 45px;
+
+        
+   }
+   .formaPretragaTakm
+   {
+       display:flex;
+       flex-direction:row;
+       justify-content: space-around;
+       
+       width: 70%;
+
+       margin:10px;
+   }
+   .formaPretragaTakm .redPretraga
+   {
+    display: flex;
+    justify-content: center; 
+    
+    flex-wrap: wrap;
+
+    width:90%;
+   }
+   .formaPretragaTakm .redPretraga select
+   {
+       flex: 1 1.2 auto;
+       width: 60%;
+
+       border-style: solid;
+       border-radius: 5px;
+       border-color:  #3a5479;
+       border-width: 2.25px;
+   }
+   .formaPrikazTakmicenje
+   {
+        display: flex;
+        flex-flow:column wrap;
+
+        flex-grow: 1;
+        align-items: center;
+        width:70%;
+
+     
+        border-style: solid;
+       border-radius: 7px;
+       border-width: 3.5px;
+       border-color:  #3a5479;
+
+       background-color: #d7d8e4;
+       
+   }
+   .formaPrikazTakmicenje .red
+   {
+        display: flex;
+        flex-flow:row wrap;
+        width:94%;
+        margin: 3px;
+        flex-grow: 1;
+   }
+   .formaPrikazTakmicenje .red  label 
+   {
+        display: flex;
+        min-width: 100px;
+        width: 30%;
+        justify-content: center;
+        align-items: center;
+
+        margin: 5px;
+       
+   }
+   .formaPrikazTakmicenje .divZaRbt  label 
+   {
+        justify-content: center;
+        align-items: center;
+
+        margin: none;
+        min-width: none;
+        width: auto;
+        display: inline;
+        
+   }
+   .formaPrikazTakmicenje .divZaRbt  
+   {
+        max-height: 20px;
+        
+   }
+   /*----------------------REZ NAJB--------------------*/
+
+   .formaRezultat
+   {
+        align-self: center;
+        justify-self: center;
+        width: 70%;
+
+        margin-top: 20px;
+        border-style: solid;
+        border-radius: 7px;
+        border-width: 3.5px;
+        border-color:  #3a5479;
+     
+        background-color: #d7d8e4;
+    
+   }
+   .formaPretragaNajRez
+   {
+        display: flex;
+        flex-flow:column wrap;
+
+        flex-grow: 1;
+        align-items: center;
+        width:100%;
+        
+   }
+   .formaPretragaNajRez .red
+   {
+        display: flex;
+        flex-flow:row wrap;
+        width:94%;
+        margin: 4.35px;
+        flex-grow: 1;
+   }
+   .formaPretragaNajRez select
+   {
+        display: flex;
+        flex-flow:row wrap;
+
+        
+        margin: 5px;
+        flex-grow: 1;
+   }
+   /*--------------------------------TABELA------------------------*/
+   .formaTabela
+   {
+    margin: 5px;
+    width:94%;
+   }
+
+   table,tr,th,td
+   {
+          
+            color: #314868;
+            text-align:center;
+            font-size: 15px;     
+    }
+    table 
+    {
+        width:100%;
+        border-collapse:separate;
+        border:3.1px solid #3a5479;
+        border-radius:5px;
+    }
+    th,td
+    {
+        border-left:2.2px solid #3a5479;
+        border-top:2.2px solid #3a5479;
+    }
+    th
+    {
+        border-top: none;
+        font-weight: bolder;
+        background-color:#9aaec9 ;
+    }
+    td
+    {
+        font-weight: 500;
+        background-color: #efefef;
+    }
+    td:first-child, th:first-child 
+    {
+        border-left: none;
+   }
+
+   /*------------FORMA DODAJ REZ-----------------------*/
+   .formaDodajRez
+   {
+    display: flex;
+    flex-flow:column wrap;
+
+    flex-grow: 1;
+    align-items: center;
+    width:100%;
+   }
+   .formaDodajRez .red
+   {
+        display: flex;
+        flex-flow:row wrap;
+        width:94%;
+        margin: 4.35px;
+        flex-grow: 1;
+   }
+   .formaDodajRez select
+   {
+        display: flex;
+        flex-flow:row wrap;
+
+        
+        margin: 5px;
+        flex-grow: 1;
+   }
+   .formaDodajRez .red  label 
+   {
+        display: flex;
+        min-width: 100px;
+        width: 30%;
+        justify-content: center;
+        align-items: center;
+
+        margin: 5px;
+       
+   }
+
+
+   /*--------------------------KLUB---------------------------*/
+.klub
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex:1 1 auto;
+    justify-content: center;
+}
+
+.formaKlub
+{
+    display: flex;
+    flex-direction: column;
+   
+    margin: 3%;
+    margin-top: 0;
+    flex:1 1 auto;
+    min-width: 130px;
+    
+   max-width: 400px;
+   width:23%;
+  
+    
+}
+.formaStatistika
+{
+     display: flex;
+     flex-direction: column;
+     flex:1 1 auto;
+    width: 70%;
+     min-width: 200px;
+
+     font-family: 'Goudy Old Style';
+      font-weight: bolder;
+       color: rgb(214, 85, 107);
+  
+}
+.formaInfoKlub .red
+{
+     display: flex;
+     flex-flow:row wrap ;
+     width:94%;
+     margin: 4.35px;
+     flex-grow: 1;
+
+     justify-content: flex-start;
+
+     
+}
+.formaInfoKlub .izmenaKlub
+{
+     display: flex;
+     flex-flow:row wrap ;
+     width:94%;
+     margin: 4.35px;
+     flex-grow: 1;
+
+     justify-content: flex-start;
+}
+.formaInfoKlub .formaPrikazBox
+{
+    display: flex;
+    flex-flow:row wrap;
+
+    
+    margin: 5px;
+    
+   
+    flex: 2 1 auto;
+       
+        min-width: 100px;
+ 
+
+}
+
+.formaInfoKlub .formaPrikazBoxemail
+{
+    margin-left: 6px;
+}
+.ladr, .ltel, .lemail
+{
+    min-width: 120px;
+}
+.formaInfoKlub label
+    {
+        font-size: 20px;        width: 70px;
+        text-align:start;
+       
+        
+    }
+    .formaInfoKlub .lemail , .formaInfoKlub .ltel
+    {
+        width: fit-content;
+    }
+.formaBrojevi
+{
+    display: flex;
+    flex-direction: row;
+    background-color: #d7d8e4 ;
+
+    border-style: solid;
+        border-radius: 15px;
+        border-color:  #3a5479;
+        box-shadow: 3px 3px 3px  #3a5479;
+        
+}
+.brLab
+{
+    display: flex;
+    flex-direction: column;
+    font-size: 27px;
+    padding: 5%;
+    width: 40%;
+    
+}
+.brLab div
+{
+    text-align:  center;
+        margin-bottom: 8%;
+}
+.brDiv
+{
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    align-items: center;
+    padding: 5%;
+    width: 60%;
+}
+.br
+{
+    background-color: #efefef; /* ili  #d7d8e4  */
+        border-style: solid;
+        border-radius: 7px;
+        border-width: 3.5px;
+        border-color:  rgb(214, 85, 107);
+        box-shadow: 2px 0px 2px  rgb(214, 85, 107);
+      
+        width: 50%;
+        /*min-width: 50px;
+        max-width: 50px;*/
+        text-align:  center;
+
+        font-family: 'Goudy Old Style';
+        color: #2b415e;
+        
+}
+.ukupno
+{
+    border-top: 5px dashed rgb(214, 85, 107);
+}
+
+.formaPretragaKlub
+{
+    display: flex;
+    flex-direction: column;
+
+}
+.formaPretragaKlub .red
+   {
+        display: flex;
+        /*flex: 2 1 auto; */
+        flex-wrap: wrap;
+       /* margin-top: 4px;
+        margin-bottom: 8px;*/
+        margin-top: 0.5%;
+        margin-bottom: 1.2%;
+        width: 94%;
+        flex-direction: row;
+        justify-content: center;
+   }
+   .formaPretragaKlub .red > label 
+   {
+      min-width: 100px;
+      width: 50px;
+      
+   }
+   .formaPretragaKlub .red input
+   {
+        flex: 2 1 auto;
+        margin-right: 2px;
+        min-width: 100px;
+        justify-self: center;
+   }
+   h4
+   {
+    font-size: 18px;
+    text-transform: none;
+    font-weight:  bolder;
+    align-self: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+   }
+
+ 
+   .klubnaslov
+   {
+       align-self: center;
+       justify-self: flex-start;
+   }
+
+   .formaCrtajPostolje
+   {
+       height: 40%;
+       display: flex;
+       align-items: center;
+       justify-content: space-evenly;
+      margin-bottom: 3%;
+      border-style: solid;
+        border-radius: 15px;
+        border-color:  #3a5479;
+        box-shadow: 7px 7px 7px  #2b415e;
+    border: 2px solid #2b415e;
+    background-color: #d7d8e4;
+
+    margin: 3%;
+    margin-right: 4%;
+    
+       
+   }
+   h5
+   {
+    font-family: 'Goudy Old Style';
+       display: flex;
+       width: 15%;
+       color: rgb(214, 85, 107);
+       font-size: 17px;
+       text-align:left;
+       font-weight:  bolder;
+       justify-self: flex-start;
+   }
+   .formaPostolje
+   {
+       
+       align-items: flex-end;
+       justify-content: center;
+       width: 220px;
+       height: 170px;
+        flex-grow: 0.5;
+        padding-bottom: 3%;
+        margin-left: 2%;
+        
+        flex-grow: 0.35;
+        /*max-width: 340px;*/
+       
+      
+   }
+   .formaPostolje div
+   {
+       display: flex;
+       flex-direction: column;
+       flex-grow: 1;
+       width:100%;
+      align-items: center;
+
+       
+      /*align-items: center; ovo je bilo i bilo je ok ako nes psosle nece*/
+
+   }
+   .trece
+   {
+       height: 60px;
+       border-right: 3px solid #3a5479;
+       border-top:3px solid #3a5479 ;
+       border-bottom: 2px solid #3a5479;
+
+       margin-left: 10px;
+   }
+   .prvo
+   {
+       height: 120px;
+       border:3px solid #3a5479 ;
+       border-bottom: none;
+       border-bottom: 2px solid #3a5479;
+   }
+ 
+   .drugo
+   {
+       height: 80px;
+      
+       border-top:3px solid #3a5479 ;
+       border-left: 3px solid #3a5479;
+       border-bottom: 2px solid #3a5479;
+        margin-right: 10px;
+       
+   }
+   .trece, .drugo, .prvo
+   {
+    border-style: solid;
+    border-radius: 10px;
+    border-color:  #3a5479;
+    box-shadow: 0px 7px 7px  #2b415e;
+
+    
+   }
+   .zlatna
+{
+    background-color: #D4AF37;
+    border: 0.5px solid #c4a02d;
+
+    border-style: solid;
+    border-radius: 2px;
+}
+.srebrna
+{
+    background-color:	#b9b6b6;
+    border: 0.5px solid #a8a8a8;
+
+    border-style: solid;
+    border-radius: 2px;
+    
+
+}
+.bronzana
+{
+    background-color:#cd7f32;
+    border: 0.5px solid #bd7228;
+
+
+    border-style: solid;
+    border-radius: 2px;
+ 
+}
+.prazno
+{
+    order: -1;
+    
+}
+.zlatna, .srebrna, .bronzana, .prazno
+{
+    width: 100%;
+    height:7%;
+   
+}
+.ldrugo, .lprvo, .ltrece
+{
+    font-size: 25px;
+   
+}
+.oboji
+{
+    width: 100%;
+    height:100%;
+    background-color: rgb(214, 85, 107);
+    border-right: 1.5px solid #2b415e;
+   
+
+    border-radius: 1.7px;
+}
+.vrsta
+{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 3;
+    width: 80%;
+    height: 100%;
+    margin-right: 5%;
+
+    border-style: solid;
+        border-radius: 8px;
+        border-color:  #3a5479;
+        box-shadow: 2px 2px 2px  #2b415e;
+    border: 2px solid #2b415e;
+
+    min-height: 90px;
+    max-height: 90px;
+
+    font-family: 'Goudy Old Style';
+      font-weight: bolder;
+       color: #1c2c41;
+}
+.formaVrsta
+{
+    display: flex;
+    flex-direction: row;
+    /*margin:20%;
+    width: 100%;
+    margin-left: 0%;*/
+    height: 40%;
+    padding: 5%;
+    align-items: center;
+
+    border-style: solid;
+        border-radius: 15px;
+        border-color:  #3a5479;
+        box-shadow: 7px 7px 7px  #2b415e;
+    border: 2px solid #2b415e;
+    background-color: #d7d8e4;
+
+    margin-bottom: 6%;
+    margin-right: 4%;
+    margin-left: 3%;
+
+}
+.formaVrsta .br{
+    
+    font-weight: bolder;
+    color: rgb(13, 111, 150);
+    width: 20%;
+   height:50px;
+   text-align:  center;
+   font-size: 20px;
+    
+}
+.prazni
+{
+    order:1;
+    width: 100%;
+    height:100%;
+   
+    border-right: 1.5px solid #2b415e;
+   
+
+    border-radius: 1.7px;
+}
+
+
+
