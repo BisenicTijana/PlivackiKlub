@@ -167,39 +167,7 @@ namespace PROJEKAT.Controllers
                 return BadRequest(e.Message);
             }
        }
-       /* [Route("NadjiTakmicenje/{dat}")]
-        [HttpGet]
-        public async Task<ActionResult> NadjiTakmicenje(DateTime dat)
-        {
-           //provera datum???=na klijentu, nikad nece da vrati prazan datum
-
-            try//jel treba ovako? pogledaj studenta
-           {
-                var takmicenja=Context.Takmicenja.Where(p=>p.Datum==dat);
-
-                if(takmicenja.Count()==0)
-                {
-                    return BadRequest("Ni jedno takmicenje nije odrzano ovog datuma!");
-                }
-                return Ok( await takmicenja.OrderBy(p=>p.Rang).OrderBy(p=>p.Grad)//neki sort stavi samo vidi sta je najbolje
-                .Select(p=>
-                new
-                {
-                            ID=p.ID,
-                            Datum=p.Datum,
-                            Rang=p.Rang,
-                            Drzava=p.Drzava,
-                            Grad=p.Grad,
-                            VelicinaBazena=p.VelicinaBazena
-                }).ToListAsync());
-
            
-            }
-            catch(Exception e)
-            {
-                return BadRequest(e.Message);
-            }
-        }*/
 
 //-------------------------NE KORISTIM----------------------------//
 

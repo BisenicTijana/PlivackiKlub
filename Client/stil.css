@@ -41,9 +41,7 @@
         width: 100%;
         padding: 0;
         margin: 0;
-        /* display: flex;
-        justify-content: center;
-        height: fit-content; */
+        
    }
    .pozadina 
    {
@@ -141,12 +139,6 @@
        background-color:#9aaec9;
         opacity: 1;
 
-        /* najbolje bi bilo kad ovo ne bi imalo flex,
-        ali trenutno INFO KLUB zahteva to tako da uradi
-        kao sto si za UREDI PLIVACA, stavi prvo div koji je flex
-        pa tek onda forme */
-       /* display: flex;
-        flex: 1 1 auto; /*mozda i ne auto*/
 
         align-self: center;
         width: 75%;
@@ -178,7 +170,6 @@
         flex-grow: 1;
         flex-direction: column;
         width: 40%;
-       /* height:100%* //ZAJEBAVALO, SVE ISLO NAPOLJ TAKM */
         min-width: 250px; /* dodato zbog wrap-a*/
 
        
@@ -328,18 +319,7 @@
    {
        min-width: 120px;
    }
-   /*.nivoSpremePol
-   {
-    height: 1cm;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    width:100%;
-    margin: 10px;
-    flex-grow: 1;
-   }*/
-   
+  
    .divZaRbt
    {
    
@@ -354,18 +334,7 @@
    }
 
 
-  /* .divPlivacCRUD
-   {
-      
-    display: flex;
-    flex-flow: row wrap;
-   
-    width:94%;
-    margin: 5px;
-    flex-grow: 1;
-    justify-content: center;
-       align-items: center;
-   }*/
+
 
    /*----------------------TAKMICENJE----------------*/
 
@@ -851,7 +820,7 @@
       align-items: center;
 
        
-      /*align-items: center; ovo je bilo i bilo je ok ako nes psosle nece*/
+   
 
    }
    .trece
@@ -970,9 +939,7 @@
 {
     display: flex;
     flex-direction: row;
-    /*margin:20%;
-    width: 100%;
-    margin-left: 0%;*/
+   
     height: 40%;
     padding: 5%;
     align-items: center;
